@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+# SSH keys and any credential files - never commit these
+a
+a.pub
+*.pem
+*.key
+.env
