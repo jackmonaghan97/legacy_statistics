@@ -7,16 +7,14 @@ AOIC legacy adult-probation statistics: site -> DuckDB -> export CSVs.
     python run.py --refresh        re-download workbooks even if already on disk
 """
 import argparse
-import sys
-from pathlib import Path
 
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from config import MANIFEST, OUT_DIR  # noqa: E402
-import extract                        # noqa: E402
-import retrieve                       # noqa: E402
-from exports import bja, justice_counts, tableau  # noqa: E402
+import extract
+import justice_counts
+import retrieve
+import tableau
+from config import MANIFEST, OUT_DIR
 
 
 def main():
@@ -38,7 +36,6 @@ def main():
     extract.load(df)
 
     print("Exporting...")
-    bja.export(df)
     justice_counts.export(df)
     tableau.export(df)
     print(f"Done -> {OUT_DIR}")

@@ -7,15 +7,11 @@ Tableau extracts (the old Tableau Pushes/): county-level rows with a month_year 
 
 Both go to <OUT_DIR>/tableau/.
 """
-import sys
-from pathlib import Path
-
 import duckdb
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from config import DB_PATH, OUT_DIR             # noqa: E402
-from extract import read_table                  # noqa: E402
+from config import DB_PATH, OUT_DIR
+from extract import read_table
 
 INCLUDE = ["discharge", "population", "new cases", "court actions", "reported violations"]
 
@@ -32,7 +28,7 @@ def county_population() -> pd.DataFrame:
             SELECT REPLACE(county_name, ' County, Illinois', '') AS county, year,
                    SUM(TRY_CAST(value AS DOUBLE)) AS gen_population
             FROM illinois_demo
-            WHERE race <> 'HISPANIC_OR_LATINO' AND year IS NOT NULL
+            WHERE race <> 'HISPANIC_OR_LATINO'
             GROUP BY 1, 2""").df()
     finally:
         con.close()
@@ -68,14 +64,13 @@ def intakes_extract(df: pd.DataFrame) -> pd.DataFrame:
     return d.drop(columns=["month", "year", "label"])
 
 
-def export(df: pd.DataFrame | None = None) -> Path:
+def export(df: pd.DataFrame | None = None) -> None:
     df = read_table() if df is None else df
     out = OUT_DIR / "tableau"
     out.mkdir(parents=True, exist_ok=True)
     population_extract(df).to_csv(out / "probation_population.csv", index=False)
     intakes_extract(df).to_csv(out / "probation_intakes.csv", index=False)
     print(f"  tableau: probation_population.csv, probation_intakes.csv -> {out}")
-    return out
 
 
 if __name__ == "__main__":

@@ -14,9 +14,9 @@ data_backups/legacy_statistics/raw/<year>/*.xlsx   (+ manifest.csv)
    │  extract.py     parse the adult sheets with probation_map.csv -> long table
    ▼
 DuckDB  aoic_legacy_probation          (+ CSV copy in data_backups/legacy_statistics)
-   │  exports/bja.py            statewide totals + breakdowns per JC metric
-   │  exports/justice_counts.py the same from the circuit "Total" sheets
-   │  exports/tableau.py        county-level extracts with census population
+   │  justice_counts.py  statewide totals + breakdowns per JC metric, written twice:
+   │                     bja/ from the county sheets, justice_counts/ from the circuit totals
+   │  tableau.py         county-level extracts with census population
    ▼
 data_backups/legacy_statistics/{bja,justice_counts,tableau}/*.csv
 ```
@@ -43,8 +43,8 @@ Requires `pandas duckdb requests beautifulsoup4 openpyxl` (all in `git_projects/
 | `retrieve.py` | year pages -> circuit workbooks (`1st Circuit` ... `24th Circuit`, `Cook Adult`, `Cook Social Service`); retries Google's flaky export endpoint; cached on disk |
 | `extract.py` | sheet parsing, label check, DuckDB load (`CREATE OR REPLACE`) |
 | `probation_map.csv` | the monthly report template with `metric, breakdown, breakdown_category, felony` prepended to every row - row *n* of a sheet gets row *n*'s labels |
-| `exports/mappings.py` | the one place raw breakdowns are mapped to Justice Counts categories |
-| `exports/bja.py`, `justice_counts.py`, `tableau.py` | the three CSV products |
+| `justice_counts.py` | raw breakdowns -> Justice Counts categories (`METRICS`, `BREAKDOWNS`), and the `bja/` and `justice_counts/` CSVs built from them |
+| `tableau.py` | the Tableau extracts, joined to `illinois_demo` for county population |
 | `BJA Submission/data/` | outputs of the previous (Postgres) version, kept for comparison |
 
 ## The table: `aoic_legacy_probation`
