@@ -1,0 +1,342 @@
+metric,breakdown,breakdown_category,subgroup,label
+,,,,I. JUVENILE COURT ACTIVITY
+,,,,A. PETITIONS FILED
+delinquency,filed,petitions,all,1. Delinquency
+addiction,filed,petitions,all,2. Addiction
+mrai,filed,petitions,all,3. MRAI
+truancy,filed,petitions,all,4. Truancy
+neglect/abuse,filed,petitions,all,5. Neglect/Abuse
+dependent,filed,petitions,all,6. Dependant
+,,,,7. Total:
+,,,,B. COURT ACTION / MONTH
+,,,,1. Petitions Dismissed
+delinquency,dismissed,court action,all,Delinquency
+addiction,dismissed,court action,all,Addiction
+mrai,dismissed,court action,all,MRAI
+truancy,dismissed,court action,all,Truancy
+,,,,Total:
+,,,,2. C U S
+delinquency,continued under supervision,court action,all,Delinquency
+addiction,continued under supervision,court action,all,Addiction
+mrai,continued under supervision,court action,all,MRAI
+truancy,continued under supervision,court action,all,Truancy
+,,,,Total:
+,,,,3. Adjudication
+delinquency,adjudicated,court action,all,Delinquency
+addiction,adjudicated,court action,all,Addiction
+mrai,adjudicated,court action,all,MRAI
+truancy,adjudicated,court action,all,Truancy
+,,,,Total:
+,,,,Gender (IV.A) vs Intake (III)
+,,,,Age (IV.B) vs Intake (III)
+,,,,Race (IV.C) vs Intake (III)
+,,,,IV: DEMOGRAPHICS
+,,,,A. Gender:
+male,gender,demographics of intakes,formal,1a. Male/Formal
+male,gender,demographics of intakes,informal,1b. Male/Informal
+female,gender,demographics of intakes,formal,2a. Female/Formal
+female,gender,demographics of intakes,informal,2b. Female/Informal
+,,,,Subtotal:
+,,,,B. AGE
+12-under,age,demographics of intakes,formal,12-under
+13,age,demographics of intakes,formal,13
+14,age,demographics of intakes,formal,14
+15,age,demographics of intakes,formal,15
+16,age,demographics of intakes,formal,16
+17-over,age,demographics of intakes,formal,17-over
+,,,,Subtotal:
+,,,,B. AGE
+12-under,age,demographics of intakes,informal,12-under
+13,age,demographics of intakes,informal,13
+14,age,demographics of intakes,informal,14
+15,age,demographics of intakes,informal,15
+16,age,demographics of intakes,informal,16
+17-over,age,demographics of intakes,informal,17-over
+,,,,Subtotal:
+,,,,Total Age:
+,,,,C. RACE/ETHNICITY 
+american indian,race/ethnicity,demographics of intakes,formal,1) American Indian
+asian,race/ethnicity,demographics of intakes,formal,2) Asian
+black,race/ethnicity,demographics of intakes,formal,3) Black
+hispanic,race/ethnicity,demographics of intakes,formal,4) Hispanic
+white,race/ethnicity,demographics of intakes,formal,5) White 
+other,race/ethnicity,demographics of intakes,formal,6) Other
+,,,,Subtotal:
+,,,,C. RACE/ETHNICITY
+american indian,race/ethnicity,demographics of intakes,informal,1) American Indian
+asian,race/ethnicity,demographics of intakes,informal,2) Asian
+black,race/ethnicity,demographics of intakes,informal,3) Black
+hispanic,race/ethnicity,demographics of intakes,informal,4) Hispanic
+white,race/ethnicity,demographics of intakes,informal,5) White 
+other,race/ethnicity,demographics of intakes,informal,6) Other
+,,,,Subtotal:
+,,,,Total Race/Ethnicity:
+,,,,D. EDUCATION (DELINQ. ONLY)
+enrolled in school,education,demographics of intakes,formal,Enrolled in school - Formal
+enrolled in school,education,demographics of intakes,informal,Enrolled in school - Informal
+,,,,II. CRIMINAL PROSECUTIONS
+automatic,transfer,criminal prosecutions,all,Automatic
+discretionary,transfer,criminal prosecutions,all,Discretionary
+,,,,Total:
+,,,,III. ADMISSIONS DURING MONTH TO ACTIVE CASELOAD
+,,,,FORMAL
+delinquency,case type,admissions,formal,A. Delinquency
+addiction,case type,admissions,formal,B. Addiction
+mrai,case type,admissions,formal,C. MRAI
+truancy,case type,admissions,formal,D. Truancy
+neglect/abuse,case type,admissions,formal,E. Neglect/Abuse
+dependent,case type,admissions,formal,F. Dependent
+,,,,Subtotal:
+,,,,INFORMAL
+delinquency,case type,admissions,informal,A. Delinquency
+addiction,case type,admissions,informal,B. Addiction
+mrai,case type,admissions,informal,C. MRAI
+truancy,case type,admissions,informal,D. Truancy
+neglect/abuse,case type,admissions,informal,E. Neglect/Abuse
+dependent,case type,admissions,informal,F. Dependent
+,,,,Subtotal:
+,,,,Total Admissions:
+,,,,V. INTAKES COMPLETED
+full,intakes,intakes,all,FULL
+partial,intakes,intakes,all,PARTIAL
+,,,,Total Intakes:
+,,,,VI. RESTITUTION AND FEES ORDERED (ACTIVE AND ADMINISTRATIVE)
+new cases ordered restit,rest and fees,rest and fees,all,A. New Cases Ordered to Pay Restitution
+amount restit ordered,rest and fees,rest and fees,all,B. Total Amount Rest. Ordered
+new cases ordered to pay fees,rest and fees,rest and fees,all,C. New Cases Ordered to Pay Fees
+,,,,VII. COURT ORDERED PROGRAMS
+alcohol,programs ordered,programs ordered,all,A. Alcohol
+drug,programs ordered,programs ordered,all,B. Drug Treatment
+alc and drug,programs ordered,programs ordered,all,C. Alcohol and Drug Treatment
+youth service agency,programs ordered,programs ordered,all,D. Youth Serv Agcy
+mental health,programs ordered,programs ordered,all,E. Mental Health
+alternative ed,programs ordered,programs ordered,all,F. Alternative Ed.
+TASC,programs ordered,programs ordered,all,G. TASC
+UDIS,programs ordered,programs ordered,all,H. UDIS
+JTPA,programs ordered,programs ordered,all,I. JTPA
+other,programs ordered,programs ordered,all,J. OTHER (explain)
+,,,,Total:
+,,,,VIII. PLACEMENTS
+,,,,A. Beginning Total
+in state,beginning,placements,all,1. In State
+out of state,beginning,placements,all,2. Out State
+,,,,Total:
+,,,,B. Ordered Placed During Month - IN STATE
+foster home,ordered,placements,in state,1. Foster Home
+group home,ordered,placements,in state,2. Group Home
+residential treatment,ordered,placements,in state,3. Resid. Treat.
+with relative,ordered,placements,in state,4. With Relative
+,,,,5. Subtotal
+removed,removed,placements,in state,C. # Removed 
+,,,,B. Ordered Placed During Month - OUT OF STATE
+foster home,ordered,placements,out of state,1. Foster Home
+group home,ordered,placements,out of state,2. Group Home
+residential treatment,ordered,placements,out of state,3. Resid. Treat.
+with relative,ordered,placements,out of state,4. With Relative
+,,,,5. Subtotal
+removed,removed,placements,out of state,C. # Removed 
+,,,,End of Month
+in state,end of month,placements,all,D1. Total In State:
+out of state,end of month,placements,all,D2. Total Out State:
+,,,,Total Placements:
+,,,,IX. ACTIVE CASELOAD
+,,,,A. Beginning Cases
+probation,first-of-month,population FOM,all,a. Probation
+supervision,first-of-month,population FOM,all,b. Supervision
+cus,first-of-month,population FOM,all,c. C U S
+informal,first-of-month,population FOM,all,d. Informal
+other,first-of-month,population FOM,all,e. Other
+,,,,f. Total:
+,,,,B. New Admissions
+probation,new cases,new cases,all,a. Probation
+supervision,new cases,new cases,all,b. Supervision
+cus,new cases,new cases,all,c. C U S
+informal,new cases,new cases,all,d. Informal
+other,new cases,new cases,all,e. Other
+,,,,f. Total:
+,,,,C. Re-Admitted from Admin.
+probation,readmit admin,readmit admin,all,a. Probation
+supervision,readmit admin,readmit admin,all,b. Supervision
+cus,readmit admin,readmit admin,all,c. C U S
+informal,readmit admin,readmit admin,all,d. Informal
+other,readmit admin,readmit admin,all,e. Other
+,,,,f. Total:
+,,,,D. Transferred In
+probation,transferred in,transferred in,all,a. Probation
+supervision,transferred in,transferred in,all,b. Supervision
+cus,transferred in,transferred in,all,c. C U S
+informal,transferred in,transferred in,all,d. Informal
+other,transferred in,transferred in,all,e. Other
+,,,,f. Total:
+,,,,E. Subtotal - Active Caseload
+,,,,a. Probation
+,,,,b. Supervision
+,,,,c. C U S
+,,,,d. Informal
+,,,,e. Other
+,,,,f. Total:
+,,,,F. Cases Dropped
+,,,,1. Scheduled Termination
+probation,scheduled termination,discharge,all,a. Probation
+supervision,scheduled termination,discharge,all,b. Supervision
+cus,scheduled termination,discharge,all,c. C U S
+informal,scheduled termination,discharge,all,d. Informal
+other,scheduled termination,discharge,all,e. Other
+,,,,f. Total:
+,,,,2. Early Termination
+probation,early termination,discharge,all,a. Probation
+supervision,early termination,discharge,all,b. Supervision
+cus,early termination,discharge,all,c. C U S
+informal,early termination,discharge,all,d. Informal
+other,early termination,discharge,all,e. Other
+,,,,f. Total:
+,,,,3.  Absconder/Warrant
+probation,absconder/warrant,discharge,all,a. Probation
+supervision,absconder/warrant,discharge,all,b. Supervision
+cus,absconder/warrant,discharge,all,c. C U S
+informal,absconder/warrant,discharge,all,d. Informal
+other,absconder/warrant,discharge,all,e. Other
+,,,,f. Total:
+,,,,4. Revoked-Technical
+probation,revoked-technical,discharge,all,a. Probation
+supervision,revoked-technical,discharge,all,b. Supervision
+cus,revoked-technical,discharge,all,c. C U S
+informal,revoked-technical,discharge,all,d. Informal
+other,revoked-technical,discharge,all,e. Other
+,,,,f. Total:
+,,,,5. Revoked-New Offense
+probation,revoked-new,discharge,all,a. Probation
+supervision,revoked-new,discharge,all,b. Supervision
+cus,revoked-new,discharge,all,c. C U S
+informal,revoked-new,discharge,all,d. Informal
+other,revoked-new,discharge,all,e. Other
+,,,,f. Total:
+,,,,6. Alternate DJJ Commit
+probation,alt djj commit,discharge,all,a. Probation
+supervision,alt djj commit,discharge,all,b. Supervision
+cus,alt djj commit,discharge,all,c. C U S
+informal,alt djj commit,discharge,all,d. Informal
+other,alt djj commit,discharge,all,e. Other
+,,,,f. Total:
+,,,,7. Unsatisfactory Termination
+probation,unsatisfactory,discharge,all,a. Probation
+supervision,unsatisfactory,discharge,all,b. Supervision
+cus,unsatisfactory,discharge,all,c. C U S
+informal,unsatisfactory,discharge,all,d. Informal
+other,unsatisfactory,discharge,all,e. Other
+,,,,f. Total:
+,,,,8. Transfer Out
+probation,transferred,discharge,all,a. Probation
+supervision,transferred,discharge,all,b. Supervision
+cus,transferred,discharge,all,c. C U S
+informal,transferred,discharge,all,d. Informal
+other,transferred,discharge,all,e. Other
+,,,,f. Total:
+,,,,9. Other (explain)
+probation,other,discharge,all,a. Probation
+supervision,other,discharge,all,b. Supervision
+cus,other,discharge,all,c. C U S
+informal,other,discharge,all,d. Informal
+other,other,discharge,all,e. Other
+,,,,f. Total:
+,,,,10. Subtotal - Cases Dropped
+,,,,a. Probation
+,,,,b. Supervision
+,,,,c. C U S
+,,,,d. Informal
+,,,,e. Other
+,,,,f. Total:
+,,,,G. Caseload Totals 
+probation,end-of-month,population EOM,all,a. Probation
+supervision,end-of-month,population EOM,all,b. Supervision
+cus,end-of-month,population EOM,all,c. C U S
+informal,end-of-month,population EOM,all,d. Informal
+other,end-of-month,population EOM,all,e. Other
+,,,,f. Total:
+,,,,X. COMMITMENTS TO DJJ
+full,djj commitments,djj commitments,all,A. Full
+evaluation,djj commitments,djj commitments,all,B. Evaluation
+habitual juvenile offender,djj commitments,djj commitments,all,C. Hab. Juv. Offndr
+violent juvenile offender,djj commitments,djj commitments,all,D. Vio. Juv. Offndr
+,,,,E. Total:
+,,,,XI. INTERSTATE CASES
+interstate,interstate,interstate,all,Total:
+,,,,XII. ADMIN. CASELOAD
+active,admin,population,all,Active
+inactive,admin,population,all,Inactive
+,,,,XIII. CLASSIFICATION OF ACTIVE CASELOAD
+,,,,A. Probation
+probation max,active,population,all,a. Maximum
+probation med,active,population,all,b. Medium
+probation min,active,population,all,c. Minimum
+probation unclassified,active,population,all,d. Unclassified
+,,,,Total:
+,,,,B. Supervision
+supervision max,active,population,all,a. Maximum
+supervision med,active,population,all,b. Medium
+supervision min,active,population,all,c. Minimum
+supervision unclassified,active,population,all,d. Unclassified
+,,,,Total:
+,,,,C. C U S
+cus max,active,population,all,a. Maximum
+cus med,active,population,all,b. Medium
+cus min,active,population,all,c. Minimum
+cus unclassified,active,population,all,d. Unclassified
+,,,,Total:
+,,,,D. Informal
+informal max,active,population,all,a. Maximum
+informal med,active,population,all,b. Medium
+informal min,active,population,all,c. Minimum
+informal unclassified,active,population,all,d. Unclassified
+,,,,Total:
+,,,,E. Other 
+other max,active,population,all,a. Maximum
+other med,active,population,all,b. Medium
+other min,active,population,all,c. Minimum
+other unclassified,active,population,all,d. Unclassified
+,,,,Total:
+,,,,Total XIII.
+,,,,a. Maximum
+,,,,b. Medium
+,,,,c. Minimum
+,,,,d. Unclassified
+,,,,e. Total Cases XIII.
+,,,,F. Total Active IX:
+,,,,Difference (IX) vs (XIII)
+,,,,XIV. INVESTIGATIONS COMPLETED
+social history,investigations,investigations,all,A. Social History
+adoption,investigations,investigations,all,B. Adoption
+contested custody,investigations,investigations,all,C. Contstd Custody
+supplemental social history,investigations,investigations,all,D. Sup. Soc. Hist
+intake screen,investigations,investigations,all,E. Intake Screen
+other,investigations,investigations,all,F. Other (explain)
+,,,,G. Totals:
+,,,,XV. CASE VIOLATIONS REPORTED
+technical,reported violations,reported violations,all,Technical
+new offense,reported violations,reported violations,all,New Offense
+,,,,Total:
+,,,,XVI. COURT ACTION ON VIOLATIONS
+technical,no revocation,court actions,all,No Vio. Tech.
+technical,revocation,court actions,all,Vio. Tech.
+,,,,Total:
+new offense,no revocation,court actions,all,No Vio. New 
+new offense,revocation,court actions,all,Violation New 
+,,,,Total EOM:
+,,,,XVII. HOME DETENTION/ELECTRONIC MONITORING
+,,,,A. Pre-Disposition Home Detention
+electronic,ordered,home detention,pre-disposition,a.1) Electronic Monitor Ordered
+non-electronic,ordered,home detention,pre-disposition,b.1) Non-Electronic Monitor Ordered 
+,,,,Total Ordered:
+,,,,
+electronic,end of month,home detention,pre-disposition,a.2) Electronic Monitor Total EOM
+non-electronic,end of month,home detention,pre-disposition,b.2) Non-Elec. Monitor Total EOM
+,,,,C. Total EOM:
+,,,,B. Post Disposition Home Detention
+electronic,ordered,home detention,post-disposition,a.1) Electronic Monitor Ordered
+non-electronic,ordered,home detention,post-disposition,b.1) Non-Electronic Monitor Ordered 
+,,,,C. Total Ordered:
+,,,,
+electronic,end of month,home detention,post-disposition,a.2) Electronic Monitor Total EOM
+non-electronic,end of month,home detention,post-disposition,b.2) Non-Elec. Monitor Total EOM
+,,,,C. Total EOM:
+,,,,

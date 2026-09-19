@@ -2,7 +2,8 @@
 Download the adult-probation workbooks from the AOIC aggregate-data site.
 
 Each year page lists one Google Sheet per circuit ("1st Circuit" ... "24th Circuit",
-"Cook Adult", "Cook Social Service"). The sheet is fetched with the public export
+"Cook Adult", "Cook Social Service", "Cook Juvenile"). The circuit workbooks hold the
+adult, juvenile and pretrial sheets of every county. The sheet is fetched with the public export
 endpoint, so no Google API or gdown is needed. Files already on disk are not fetched
 again; delete a year's folder (or pass refresh=True) to re-download it.
 """
@@ -17,7 +18,7 @@ from bs4 import BeautifulSoup
 from config import COOK_CIRCUIT, FIRST_YEAR, MANIFEST, RAW_DIR, SITE
 
 CIRCUIT_RE = re.compile(r"^(\d+)(st|nd|rd|th) Circuit$")
-COOK = {"Cook Adult": "cook_adult", "Cook Social Service": "cook_social"}
+COOK = {"Cook Adult": "cook_adult", "Cook Social Service": "cook_social", "Cook Juvenile": "cook_juvenile"}
 
 
 def years_on_site() -> list[int]:
@@ -40,7 +41,7 @@ def workbooks_for(year: int) -> list[dict]:
         elif title in COOK:
             circuit, slug = COOK_CIRCUIT, COOK[title]
         else:
-            continue  # statewide compilations, juvenile, pretrial, BJS, ...
+            continue  # statewide compilations, pretrial, BJS, ...
         seen.add(m.group(1))
         out.append(dict(year=year, title=title, circuit=circuit, sheet_id=m.group(1),
                         file=str(RAW_DIR / str(year) / f"{year}_{slug}.xlsx")))
